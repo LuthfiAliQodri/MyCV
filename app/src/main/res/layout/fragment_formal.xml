@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/stb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:text="Vocational School Taruna Bhakti Depok"
+                        android:textSize="23sp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_below="@id/stb"
+                        android:gravity="center"
+                        android:text="Graudated 2017 - Now (-)"/>
+
+                    <ImageView
+                        android:id="@+id/tb"
+                        android:layout_below="@id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/asset_1"/>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ssebelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="Junior High School Negeri 11 Depok"
+                        android:textSize="23sp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:id="@id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_below="@+id/ssebelas"
+                        android:gravity="center"
+                        android:text="Graudated 2014 - 2017 (3 YEARS)"/>
+
+                    <ImageView
+                        android:id="@+id/sebelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_below="@+id/grade"
+                        android:src="@drawable/asset_2"/>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sdtiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Sukamaju Baru 3 Elementary School Depok"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:id="@id/grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_below="@+id/sdtiga"
+                    android:gravity="center"
+                    android:text="Graudated 2009 - 2014 (5 YEARS)"/>
+
+                <ImageView
+                    android:id="@+id/sd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_below="@+id/grade"
+                    android:src="@drawable/asset_3"
+                    android:layout_marginBottom="5dp"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/muh30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="Muhammadiyah 30 Elementary School Tangerang"
+                        android:textSize="23sp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:id="@id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_below="@+id/muh30"
+                        android:gravity="center"
+                        android:text="Graudated 2009 - 2009 (4 months)"/>
+
+                    <ImageView
+                        android:id="@+id/muhh30"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_below="@+id/grade"
+                        android:src="@drawable/asset_4"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/muh3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="Muhammadiyah 3 Elementary School Bali"
+                        android:textSize="23sp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:id="@id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_below="@+id/muh3"
+                        android:gravity="center"
+                        android:text="Graudated 2008 - 2009 (8 months)"/>
+
+                    <ImageView
+                        android:id="@+id/muhh3"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_below="@+id/grade"
+                        android:src="@drawable/asset_5"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="TK Aisyiyah Bustanul Athfal 3 Bali"
+                        android:textSize="23sp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:id="@id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_below="@+id/tk"
+                        android:gravity="center"
+                        android:text="Graudated 2006 - 2008 (2 YEARS)"/>
+
+                    <ImageView
+                        android:id="@+id/tkk"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_below="@+id/grade"
+                        android:src="@drawable/asset_6"
+                        android:layout_marginBottom="8dp"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

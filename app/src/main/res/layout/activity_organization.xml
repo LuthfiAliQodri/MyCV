@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Organization">
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:id="@+id/awal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/txt"
+            android:text="My CV"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt"
+            android:id="@+id/name"
+            android:text="Organization \nExperience"
+            android:textSize="14sp"
+            android:textColor="#52BAFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/experience" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:layout_below="@id/image"
+            android:layout_marginTop="5dp"
+            android:textColor="#52BAFF"
+            android:gravity="center"
+            android:text="Luthfi Ali Qodri"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:gravity="center"
+            android:text="Photograph And Web Developer"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sdb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:text="Organization"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/img_icon1"
+                        android:layout_below="@id/sdb"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/piase"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/judul"
+                        android:layout_below="@id/sdb"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_toRightOf="@+id/img_icon1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:textStyle="bold"
+                        android:text="PIASE 2019" />
+                    <TextView
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon1"
+                        android:layout_toEndOf="@+id/img_icon1"
+                        android:layout_below="@+id/judul"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="2019"/>
+
+                    <TextView
+                        android:id="@+id/grade"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon1"
+                        android:layout_toEndOf="@+id/img_icon1"
+                        android:layout_below="@+id/year"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Photo And Video Documentary"/>
+
+                    <TextView
+                        android:id="@+id/descc"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon1"
+                        android:layout_toEndOf="@+id/img_icon1"
+                        android:layout_below="@+id/grade"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Psychology Innovation In Art, Social  Education Rooftop ITC Depok. Piase 2019 is a music concert event held by Gunadarma University, Department of Psychology."
+                       />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_icon2"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/panitia"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_toRightOf="@+id/img_icon2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:textStyle="bold"
+                        android:text="Karang Taruna" />
+                    <TextView
+                        android:id="@+id/year2"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon2"
+                        android:layout_toEndOf="@+id/img_icon2"
+                        android:layout_below="@+id/judul2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="2017 - NOW(-)"/>
+
+                    <TextView
+                        android:id="@+id/grade2"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon2"
+                        android:layout_toEndOf="@+id/img_icon2"
+                        android:layout_below="@+id/year2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Photo And Video Documentary"/>
+
+                    <TextView
+                        android:id="@+id/descc2"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon2"
+                        android:layout_toEndOf="@+id/img_icon2"
+                        android:layout_below="@+id/grade2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="48dp"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Youth clubs held in my area, which is in Sukamaju Baru, Depok. I started this youth organization in 2017 until now."
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_icon3"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/osis"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/judul3"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_toRightOf="@+id/img_icon3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:textStyle="bold"
+                        android:text="OSIS at SMPN 11 Depok" />
+                    <TextView
+                        android:id="@+id/year3"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon3"
+                        android:layout_toEndOf="@+id/img_icon3"
+                        android:layout_below="@+id/judul3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="2015 - 2017"/>
+
+                    <TextView
+                        android:id="@+id/grade3"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon3"
+                        android:layout_toEndOf="@+id/img_icon3"
+                        android:layout_below="@+id/year3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Members and Education section"/>
+
+                    <TextView
+                        android:id="@+id/descc3"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_icon3"
+                        android:layout_toEndOf="@+id/img_icon3"
+                        android:layout_below="@+id/grade3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="48dp"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="This Osis organization, which was held at SMPN 11 Depok. when I was a student at SMPN 11 Depok."
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="28dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sdbb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:text="Experience"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/img_exe1"
+                        android:layout_below="@id/sdbb"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/trisakti"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/judulex"
+                        android:layout_below="@id/sdbb"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_toRightOf="@+id/img_exe1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:textStyle="bold"
+                        android:text="How to be an Android Developer" />
+                    <TextView
+                        android:id="@+id/yearexe"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_exe1"
+                        android:layout_toEndOf="@+id/img_exe1"
+                        android:layout_below="@+id/judulex"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="2019"/>
+
+
+                    <TextView
+                        android:id="@+id/desc_exe"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/img_exe1"
+                        android:layout_toEndOf="@+id/img_exe1"
+                        android:layout_below="@+id/yearexe"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Seminar and discussion with the theme of How to be an Android Developer, organized by the Faculty of Industrial Technology of Trisakti University."
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
